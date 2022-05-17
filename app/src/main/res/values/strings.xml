@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FourGot</string>
+
+    <!--    Referente a tela de cadastro de senhas-->
+    <string name="add_button">Adicionar</string>
+    <string name="password_hint">Senha</string>
+    <string name="password_name_hint">Nome</string>
+    <string name="password_title">Senha</string>
 </resources>
