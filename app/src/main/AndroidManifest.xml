@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FourGot">
         <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
