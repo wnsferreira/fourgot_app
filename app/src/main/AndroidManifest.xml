@@ -9,10 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FourGot">
         <activity
-            android:name=".MainActivity3"
+            android:name=".CreateSenha"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".ReadSenha"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tituloMenu"
+        android:id="@+id/tituloTelaInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -20,16 +20,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnBuscaSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnBusca"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="24dp"
         android:background="#00FFFFFF"
-        android:tint="#00B8D4"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_search" />
+        app:srcCompat="@drawable/ic_search"
+        app:tint="#00B8D4" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addSenha"
@@ -42,8 +43,8 @@
         android:tint="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="#FDFDFD"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@drawable/ic_add"
+        app:tint="#ffffff" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardSenha1"
@@ -55,7 +56,7 @@
         app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloMenu">
+        app:layout_constraintTop_toBottomOf="@+id/tituloTelaInicial">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,14 +66,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:id="@+id/tituloSenha1"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="20dp"
                     android:text="Netflix"
                     android:textColor="#474747"
                     android:textSize="24sp"
@@ -80,18 +82,19 @@
 
                 <ImageButton
                     android:id="@+id/btnCard1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_weight="1"
                     android:background="#00FFFFFF"
-                    android:tint="#474747"
-                    app:srcCompat="@android:drawable/ic_menu_more" />
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/ic_more_vert"
+                    app:tint="#474747" />
+
             </LinearLayout>
 
             <TextView
                 android:id="@+id/userSenha1"
-                android:layout_width="310dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
@@ -122,14 +125,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:id="@+id/tituloSenha2"
-                    android:layout_width="240dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="20dp"
                     android:text="Lojas Americanas"
                     android:textColor="#474747"
                     android:textSize="24sp"
@@ -137,13 +141,13 @@
 
                 <ImageButton
                     android:id="@+id/btnCard2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_weight="1"
                     android:background="#00FFFFFF"
-                    android:tint="#474747"
-                    app:srcCompat="@android:drawable/ic_menu_more" />
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/ic_more_vert"
+                    app:tint="#474747" />
 
             </LinearLayout>
 

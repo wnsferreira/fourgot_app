@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">FourGot</string>
+
+<!--  Activity Tela Inicial  -->
+
+<!--  Fim Activity Tela Inicial  -->
+
+<!--  Activity Create Senha  -->
+    <string name="create_titulo">Criar Senha</string>
+    <string name="create_lbl_nome">Nome:</string>
+    <string name="create_lbl_login">Login:</string>
+    <string name="create_lbl_senha">Senha:</string>
+    <string name="create_lbl_url">URL:</string>
+    <string name="create_name_hint">Nome da conta ou site</string>
+    <string name="create_login_hint">Seu nome de usuário ou e-mail</string>
+    <string name="create_senha_hint">Sua senha de acesso</string>
+    <string name="create_url_hint">Endereço do site</string>
+    <string name="create_btn_aleatoria">Gerar Senha Aleatória</string>
+<!--  Fim Activity Create Senha  -->
+
+<!--  Activity Read Senha  -->
+    <string name="read_titulo">Informações</string>
+    <string name="read_lbl_nome">Nome:</string>
+    <string name="read_lbl_login">Login:</string>
+    <string name="read_lbl_senha">Senha:</string>
+    <string name="read_lbl_url">URL:</string>
+<!--  Fim Activity Read Senha  -->
+
 </resources>

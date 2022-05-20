@@ -4,12 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".ReadSenha">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tituloReadSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/read_titulo"
+        android:textColor="#00B8D4"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloReadSenha">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -23,7 +38,7 @@
                 android:id="@+id/lblNome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nome:"
+                android:text="@string/read_lbl_nome"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -49,7 +64,7 @@
                 android:id="@+id/lblURL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="URL:"
+                android:text="@string/read_lbl_url"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -74,7 +89,7 @@
                 android:id="@+id/lblLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login:"
+                android:text="@string/read_lbl_login"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -100,7 +115,7 @@
                 android:id="@+id/lblSenha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Senha:"
+                android:text="@string/read_lbl_senha"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -125,7 +140,8 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:srcCompat="@drawable/ic_edit"
+        app:tint="#ffffff"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnVoltar"
@@ -133,10 +149,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginBottom="25dp"
-        android:backgroundTint="#00BCD4"
+        android:backgroundTint="#595A5A"
         android:clickable="true"
+        app:backgroundTint="#595A5A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
+        app:srcCompat="@drawable/ic_undo"
+        app:tint="#ffffff" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
