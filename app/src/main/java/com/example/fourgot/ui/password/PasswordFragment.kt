@@ -61,7 +61,7 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
                     hideKeyboard()
                     requireView().requestFocus()
 
-//                  volta para a tela anterior (lista)
+//                  volta para para a tela anterior (lista)
                     findNavController().popBackStack()
                 }
             }
