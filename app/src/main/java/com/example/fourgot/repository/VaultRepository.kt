@@ -13,5 +13,5 @@ interface VaultRepository {
 
     suspend fun deleteAllVault()
 
-    suspend fun geteAllVault(): LiveData<List<VaultEntity>>
+    suspend fun getAllVault(): List<VaultEntity>
 }

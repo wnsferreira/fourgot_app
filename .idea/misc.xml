@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/drawable/ic_add.xml" value="0.1195" />
         <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/fragment_password.xml" value="0.25" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/fragment_password_list.xml" value="0.2" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/password_item.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>

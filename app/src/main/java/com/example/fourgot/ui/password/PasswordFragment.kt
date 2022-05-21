@@ -7,6 +7,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
+import androidx.navigation.fragment.findNavController
 import com.example.fourgot.R
 import com.example.fourgot.data.db.AppDatabase
 import com.example.fourgot.data.db.dao.VaultDAO
@@ -58,6 +59,10 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
                 is PasswordViewModel.PasswordState.Inserted -> {
                     clearFields()
                     hideKeyboard()
+                    requireView().requestFocus()
+
+//                  volta para a tela anterior (lista)
+                    findNavController().popBackStack()
                 }
             }
 

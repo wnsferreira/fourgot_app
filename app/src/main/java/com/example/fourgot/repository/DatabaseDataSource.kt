@@ -27,15 +27,15 @@ class DatabaseDataSource(
     }
 
     override suspend fun deleteVault(id: Long) {
-        TODO("Not yet implemented")
+        vaultDAO.delete(id)
     }
 
     override suspend fun deleteAllVault() {
-        TODO("Not yet implemented")
+        vaultDAO.deleteAll()
     }
 
-    override suspend fun geteAllVault(): LiveData<List<VaultEntity>> {
-        TODO("Not yet implemented")
+    override suspend fun getAllVault(): List<VaultEntity> {
+        return vaultDAO.getAll()
     }
 
 }

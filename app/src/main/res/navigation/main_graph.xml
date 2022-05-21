@@ -3,8 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/passwordFragment">
+    app:startDestination="@id/passwordListFragment">
 
+    <fragment
+        android:id="@+id/passwordListFragment"
+        android:name="com.example.fourgot.ui.passwordList.PasswordListFragment"
+        android:label="fragment_password_list"
+        tools:layout="@layout/fragment_password_list" />
+        <action
+            android:id="@+id/action_passwordListFragment"
+            app:destination="@+id/passwordFragment" />
     <fragment
         android:id="@+id/passwordFragment"
         android:name="com.example.fourgot.ui.password.PasswordFragment"

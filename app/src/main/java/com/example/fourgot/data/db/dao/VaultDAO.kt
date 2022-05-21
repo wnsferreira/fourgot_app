@@ -22,5 +22,5 @@ interface VaultDAO {
     suspend fun deleteAll()
 
     @Query("SELECT * FROM vault")
-    fun getall(): LiveData<List<VaultEntity>>
+    suspend fun getAll(): List<VaultEntity>
 }
