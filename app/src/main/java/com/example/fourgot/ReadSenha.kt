@@ -5,25 +5,26 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
-class MainActivity : AppCompatActivity() {
+class ReadSenha : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.read_senha)
 
-        val btnCard1 = this.findViewById<ImageButton>(R.id.btnCard1)
+        val btnVoltar = this.findViewById<ImageButton>(R.id.btnVoltar)
 
-        btnCard1.setOnClickListener {
-            val intent = Intent(this, ReadSenha::class.java)
+        btnVoltar.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
 
             startActivity(intent)
         }
 
-        val addSenha = this.findViewById<ImageButton>(R.id.addSenha)
+        val btnEditar = this.findViewById<ImageButton>(R.id.btnEditar)
 
-        addSenha.setOnClickListener {
+        btnEditar.setOnClickListener {
             val intent = Intent(this, CreateSenha::class.java)
 
             startActivity(intent)
         }
+
     }
 }
