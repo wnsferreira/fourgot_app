@@ -26,4 +26,13 @@
     <string name="read_lbl_url">URL:</string>
 <!--  Fim Activity Read Senha  -->
 
+<!--    Referente a tela de cadastro de senhas-->
+    <string name="add_button">Adicionar</string>
+    <string name="password_hint">Senha</string>
+    <string name="password_name_hint">Nome</string>
+    <string name="password_title">Senha</string>
+
+    <string name="password_inserted_successfully">A senha foi salva com sucesso</string>
+    <string name="password_error_to_insert">Ocorreu um erro ao inserir a senha</string>
+
 </resources>
