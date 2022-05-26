@@ -30,10 +30,14 @@ class PasswordListAdapter(
 
         private val textViewPasswordName: TextView = itemView.text_password_name
         private val textViewPasswordPassword: TextView = itemView.text_password_password
+        private val txtUrl: TextView = itemView.txtUrl
+        private val txtEmail: TextView = itemView.txtEmail
 
         fun bindView(password: VaultEntity) {
             textViewPasswordName.text = password.name
             textViewPasswordPassword.text = password.password
+            txtUrl.text = password.url
+            txtEmail.text = password.email
         }
     }
 }

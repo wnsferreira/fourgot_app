@@ -7,20 +7,24 @@ import com.example.fourgot.data.db.entity.VaultEntity
 class DatabaseDataSource(
     private val vaultDAO: VaultDAO
 ) : VaultRepository{
-    override suspend fun insertVault(name: String, password: String): Long {
+    override suspend fun insertVault(name: String, password: String, url: String, email: String): Long {
         val vault = VaultEntity(
             name = name,
-            password = password
+            password = password,
+            url = url,
+            email = email
         )
 
         return vaultDAO.insert(vault)
     }
 
-    override suspend fun updateVault(id: Long, name: String, password: String) {
+    override suspend fun updateVault(id: Long, name: String, password: String, url: String, email: String) {
         val vault = VaultEntity(
             id = id,
             name = name,
-            password = password
+            password = password,
+            url = url,
+            email = email
         )
 
         vaultDAO.update(vault)

@@ -23,9 +23,9 @@ class PasswordViewModel(
     val messageEventData: LiveData<Int>
         get() = _messageEventData
 
-    fun addPassword(name: String, password: String) = viewModelScope.launch {
+    fun addPassword(name: String, password: String, email: String, url: String) = viewModelScope.launch {
         try {
-            val id = repository.insertVault(name, password)
+            val id = repository.insertVault(name, password, email, url)
             if (id > 0){
                 _passwordStateEventData.value = PasswordState.Inserted
 //                _messageEventData.value = R.string.password_inserted_successfully

@@ -76,6 +76,8 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
 
         input_name.text?.clear()
         input_password.text?.clear()
+        txtInputLogin.text?.clear()
+        txtInputURL.text?.clear()
     }
 
 // Força o fechamento do teclado
@@ -92,8 +94,10 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
         button_password.setOnClickListener{
             val name = input_name.text.toString()
             val password = input_password.text.toString()
+            val email = txtInputLogin.text.toString()
+            val url = txtInputURL.text.toString()
 
-            viewModel.addPassword(name, password)
+            viewModel.addPassword(name, password, email, url)
         }
     }
 

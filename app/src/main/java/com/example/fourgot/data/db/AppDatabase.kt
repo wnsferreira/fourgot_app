@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.fourgot.data.db.dao.VaultDAO
 import com.example.fourgot.data.db.entity.VaultEntity
 
-@Database(entities = [VaultEntity::class], version = 1)
+@Database(entities = [VaultEntity::class], version = 2)
 abstract class AppDatabase : RoomDatabase(){
 
     abstract val vaultDAO: VaultDAO

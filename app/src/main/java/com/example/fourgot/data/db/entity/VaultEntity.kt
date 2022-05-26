@@ -8,5 +8,7 @@ data class VaultEntity (
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
     val name: String,
-    val password: String
+    val password: String,
+    val url: String,
+    val email: String
 )
