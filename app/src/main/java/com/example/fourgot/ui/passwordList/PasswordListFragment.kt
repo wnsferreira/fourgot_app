@@ -35,15 +35,15 @@ class PasswordListFragment : Fragment(R.layout.fragment_password_list) {
         super.onViewCreated(view, savedInstanceState)
         observeViewModelEvents()
         configureViewListeners()
-
-        btnBusca.setOnClickListener(){
-            findNavController().navigate(R.id.action_passwordListFragment_to_readFragment)
-        }
     }
 
     private fun observeViewModelEvents(){
         viewModel.allPasswordsEvent.observe(viewLifecycleOwner) {   allPasswords ->
-            val passwordListAdapter = PasswordListAdapter(allPasswords)
+            val passwordListAdapter = PasswordListAdapter(allPasswords).apply {
+                onItemClick = {
+                    findNavController().navigate(R.id.readFragment)
+                }
+            }
 
             with(recycler_password){
                 setHasFixedSize(true)
