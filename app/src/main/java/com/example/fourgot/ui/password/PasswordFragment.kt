@@ -36,12 +36,6 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
         fun newInstance() = PasswordFragment()
     }
 
-//    override fun onCreateView(
-//        inflater: LayoutInflater, container: ViewGroup?,
-//        savedInstanceState: Bundle?
-//    ): View? {
-//        return inflater.inflate(R.layout.fragment_password, container, false)
-//    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -49,8 +43,6 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
         observeEvents()
         setListeners()
     }
-
-
 
     private fun observeEvents() {
 
@@ -76,8 +68,8 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
 
         input_name.text?.clear()
         input_password.text?.clear()
-        txtInputLogin.text?.clear()
-        txtInputURL.text?.clear()
+        txtEmail.text?.clear()
+        txtUrl.text?.clear()
     }
 
 // Força o fechamento do teclado
@@ -94,17 +86,10 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
         button_password.setOnClickListener{
             val name = input_name.text.toString()
             val password = input_password.text.toString()
-            val email = txtInputLogin.text.toString()
-            val url = txtInputURL.text.toString()
+            val email = txtEmail.text.toString()
+            val url = txtUrl.text.toString()
 
             viewModel.addPassword(name, password, email, url)
         }
     }
-
-//    override fun onActivityCreated(savedInstanceState: Bundle?) {
-//        super.onActivityCreated(savedInstanceState)
-//        viewModel = ViewModelProvider(this).get(PasswordViewModel::class.java)
-//        // TODO: Use the ViewModel
-//    }
-
 }

@@ -28,7 +28,7 @@ class PasswordListAdapter(
 
     class PasswordListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
-        private val textViewPasswordName: TextView = itemView.text_password_name
+        private val textViewPasswordName: TextView = itemView.input_name
         private val textViewPasswordPassword: TextView = itemView.text_password_password
         private val txtUrl: TextView = itemView.txtUrl
         private val txtEmail: TextView = itemView.txtEmail

@@ -16,12 +16,17 @@
         <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/drawable/ic_more_vert.xml" value="0.1025" />
         <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/drawable/ic_search.xml" value="0.1025" />
         <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/drawable/ic_undo.xml" value="0.1025" />
-        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/create_senha.xml" value="0.22" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/activity_main2.xml" value="0.1118659420289855" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/activity_read_senha.xml" value="0.25" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/create_senha.xml" value="0.1" />
         <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/fragment_password.xml" value="0.25" />
-        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/fragment_password_list.xml" value="0.25" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/fragment_password_list.xml" value="0.22" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/fragment_read.xml" value="0.21" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/fragment_read_senha_test.xml" value="0.1118659420289855" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/fragment_test.xml" value="0.20416666666666666" />
         <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/password_item.xml" value="0.22" />
-        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/read_senha.xml" value="0.25" />
+        <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/layout/read_senha.xml" value="0.1814814814814815" />
         <entry key="..\:/Workspace developer/Kotlin/FourGot/Four_Got_App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1025" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
