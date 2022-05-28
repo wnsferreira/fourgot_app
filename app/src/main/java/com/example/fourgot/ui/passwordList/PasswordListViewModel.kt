@@ -12,8 +12,6 @@ class PasswordListViewModel(
     private val repository: VaultRepository
     ) : ViewModel() {
 
-//        val allPasswordsEvent = repository.getAllVault()
-
     private val _allPasswordsEvent = MutableLiveData<List<VaultEntity>>()
     val allPasswordsEvent: LiveData<List<VaultEntity>>
         get() = _allPasswordsEvent

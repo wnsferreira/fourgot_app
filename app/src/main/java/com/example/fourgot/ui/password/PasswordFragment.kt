@@ -14,6 +14,7 @@ import com.example.fourgot.data.db.dao.VaultDAO
 import com.example.fourgot.extension.hideKeyboard
 import com.example.fourgot.repository.DatabaseDataSource
 import com.example.fourgot.repository.VaultRepository
+import com.example.fourgot.ui.ReadFragment
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_password.*
 
@@ -36,12 +37,15 @@ class PasswordFragment : Fragment(R.layout.fragment_password) {
         fun newInstance() = PasswordFragment()
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         observeEvents()
         setListeners()
+
+        btnVoltar2.setOnClickListener{
+            findNavController().navigate(R.id.passwordListFragment)
+        }
     }
 
     private fun observeEvents() {

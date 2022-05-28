@@ -26,13 +26,10 @@
         android:label="@string/password_title"
         tools:layout="@layout/fragment_password" />
     <fragment
-        android:id="@+id/testFragment"
-        android:name="com.example.fourgot.ui.TestFragment"
-        android:label="fragment_test"
-        tools:layout="@layout/fragment_test" />
-    <fragment
         android:id="@+id/readFragment"
         android:name="com.example.fourgot.ui.ReadFragment"
         android:label="fragment_read"
-        tools:layout="@layout/fragment_read" />
+        tools:layout="@layout/fragment_read">
+
+    </fragment>
 </navigation>

@@ -2,6 +2,7 @@ package com.example.fourgot.ui.passwordList
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.text.Layout
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.fragment.app.viewModels
@@ -12,6 +13,7 @@ import com.example.fourgot.data.db.AppDatabase
 import com.example.fourgot.data.db.dao.VaultDAO
 import com.example.fourgot.repository.DatabaseDataSource
 import com.example.fourgot.repository.VaultRepository
+import com.example.fourgot.ui.ReadFragment
 import kotlinx.android.synthetic.main.fragment_password_list.*
 import kotlinx.android.synthetic.main.password_item.*
 

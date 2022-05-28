@@ -46,8 +46,6 @@ class PasswordListAdapter(
             itemView.setOnClickListener{
                 onItemClick?.invoke(password)
             }
-
-//            itemView.findNavController().navigate(action_passwordListFragment_to_readFragment)
         }
     }
 }
