@@ -5,7 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import com.example.fourgot.R
 
-
+// Este fragment não está sendo chamado
+// Falta implementar o UPDATE
 
 class ReadFragment : Fragment(R.layout.fragment_read) {
 

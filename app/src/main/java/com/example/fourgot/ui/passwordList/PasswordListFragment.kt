@@ -42,9 +42,11 @@ class PasswordListFragment : Fragment(R.layout.fragment_password_list) {
     private fun observeViewModelEvents(){
         viewModel.allPasswordsEvent.observe(viewLifecycleOwner) {   allPasswords ->
             val passwordListAdapter = PasswordListAdapter(allPasswords).apply {
-                onItemClick = {
-                    findNavController().navigate(R.id.readFragment)
-                }
+
+////                Leva para a tela de informacoes - ReadFragment (Desativado)
+////                onItemClick = {
+////                    findNavController().navigate(R.id.readFragment)
+////                }
             }
 
             with(recycler_password){
