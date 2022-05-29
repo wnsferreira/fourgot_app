@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fourgot.R
-import com.example.fourgot.R.id.action_passwordListFragment_to_readFragment
 import com.example.fourgot.data.db.entity.VaultEntity
 import kotlinx.android.synthetic.main.password_item.view.*
 

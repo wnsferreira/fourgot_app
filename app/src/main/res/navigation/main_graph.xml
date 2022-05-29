@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_passwordListFragment_to_passwordFragment2"
             app:destination="@id/passwordFragment" />
-        <action
-            android:id="@+id/action_passwordListFragment_to_readFragment"
-            app:destination="@id/readFragment" />
     </fragment>
         <action
             android:id="@+id/action_passwordListFragment"
@@ -25,11 +22,4 @@
         android:name="com.example.fourgot.ui.password.PasswordFragment"
         android:label="@string/password_title"
         tools:layout="@layout/fragment_password" />
-    <fragment
-        android:id="@+id/readFragment"
-        android:name="com.example.fourgot.ui.ReadFragment"
-        android:label="fragment_read"
-        tools:layout="@layout/fragment_read">
-
-    </fragment>
 </navigation>

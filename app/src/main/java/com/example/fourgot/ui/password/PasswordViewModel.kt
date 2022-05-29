@@ -28,10 +28,10 @@ class PasswordViewModel(
             val id = repository.insertVault(name, password, email, url)
             if (id > 0){
                 _passwordStateEventData.value = PasswordState.Inserted
-//                _messageEventData.value = R.string.password_inserted_successfully
+                _messageEventData.value = R.string.password_inserted_successfully
             }
         }catch (ex: Exception){
-//            _messageEventData.value = R.string.password_error_to_insert
+            _messageEventData.value = R.string.password_error_to_insert
             Log.e(TAG,ex.toString())
         }
     }
