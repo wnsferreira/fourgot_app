@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/passwordListFragment">
+    app:startDestination="@id/splashScreenFragment">
 
     <fragment
         android:id="@+id/passwordListFragment"
@@ -22,4 +22,12 @@
         android:name="com.example.fourgot.ui.password.PasswordFragment"
         android:label="@string/password_title"
         tools:layout="@layout/fragment_password" />
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.fourgot.ui.password.SplashScreenFragment"
+        android:label="fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_passwordListFragment"
+            app:destination="@id/passwordListFragment" />
+    </fragment>
 </navigation>
