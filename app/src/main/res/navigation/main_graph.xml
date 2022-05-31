@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/passwordListFragment">
+
+    <fragment
+        android:id="@+id/passwordListFragment"
+        android:name="com.example.fourgot.ui.passwordList.PasswordListFragment"
+        android:label="fragment_password_list"
+        tools:layout="@layout/fragment_password_list" >
+        <action
+            android:id="@+id/action_passwordListFragment_to_passwordFragment2"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+        <action
+            android:id="@+id/action_passwordListFragment"
+            app:destination="@+id/passwordFragment" />
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.example.fourgot.ui.password.PasswordFragment"
+        android:label="@string/password_title"
+        tools:layout="@layout/fragment_password" />
+</navigation>

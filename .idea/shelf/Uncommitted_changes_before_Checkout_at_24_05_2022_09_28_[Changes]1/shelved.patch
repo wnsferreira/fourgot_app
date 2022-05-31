@@ -1,0 +1,23 @@
+Index: app/src/main/java/com/example/fourgot/ui/password/PasswordViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.fourgot.ui.password\r\n\r\nimport android.util.Log\r\nimport androidx.lifecycle.LiveData\r\nimport androidx.lifecycle.MutableLiveData\r\nimport androidx.lifecycle.ViewModel\r\nimport androidx.lifecycle.viewModelScope\r\nimport com.example.fourgot.R\r\nimport com.example.fourgot.repository.VaultRepository\r\nimport kotlinx.coroutines.launch\r\nimport java.lang.Exception\r\n\r\nclass PasswordViewModel(\r\n    private val repository: VaultRepository\r\n) : ViewModel() {\r\n\r\n    // notifica quando uma senha foi cadastrada\r\n    private val _passwordStateEventData = MutableLiveData<PasswordState>()\r\n    val passwordStateEventData: LiveData<PasswordState>\r\n        get() = _passwordStateEventData\r\n\r\n    private val _messageEventData = MutableLiveData<Int>()\r\n    val messageEventData: LiveData<Int>\r\n        get() = _messageEventData\r\n\r\n    fun addPassword(name: String, password: String) = viewModelScope.launch {\r\n        try {\r\n            val id = repository.insertVault(name, password)\r\n            if (id > 0){\r\n                _passwordStateEventData.value = PasswordState.Inserted\r\n                _messageEventData.value = R.string.password_inserted_successfully\r\n            }\r\n        }catch (ex: Exception){\r\n            _messageEventData.value = R.string.password_error_to_insert\r\n            Log.e(TAG,ex.toString())\r\n        }\r\n    }\r\n\r\n    companion object {\r\n        private val TAG = PasswordViewModel::class.java.simpleName\r\n    }\r\n\r\n    sealed class PasswordState {\r\n        object Inserted : PasswordState()\r\n    }\r\n\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fourgot/ui/password/PasswordViewModel.kt b/app/src/main/java/com/example/fourgot/ui/password/PasswordViewModel.kt
+--- a/app/src/main/java/com/example/fourgot/ui/password/PasswordViewModel.kt	
++++ b/app/src/main/java/com/example/fourgot/ui/password/PasswordViewModel.kt	
+@@ -28,10 +28,10 @@
+             val id = repository.insertVault(name, password)
+             if (id > 0){
+                 _passwordStateEventData.value = PasswordState.Inserted
+-                _messageEventData.value = R.string.password_inserted_successfully
++//                _messageEventData.value = R.string.password_inserted_successfully
+             }
+         }catch (ex: Exception){
+-            _messageEventData.value = R.string.password_error_to_insert
++//            _messageEventData.value = R.string.password_error_to_insert
+             Log.e(TAG,ex.toString())
+         }
+     }
